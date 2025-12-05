@@ -52,6 +52,7 @@ public class CreateContactTest extends BaseClassMain
 		//step1 login to app
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.get(URL);
+		System.out.println("HIi");
 		driver.findElement(By.name("user_name")).sendKeys(USERNAME);
 		driver.findElement(By.name("user_password")).sendKeys(PASSWORD);
 		driver.findElement(By.id("submitButton")).click();
